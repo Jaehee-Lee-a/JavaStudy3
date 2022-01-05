@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class MethodMain {
 
 	public static void main(String[] args) {
+		// 1. Main Method의 용도
+		//	1) 프로그램 Start와 초기화
+		//	2) 프로그램 test
+		
+		
 		System.out.println("MainMethod Start");
 
 		ReturnStudy rs = new ReturnStudy(); // 메소드 사용을 위해 객체 생성

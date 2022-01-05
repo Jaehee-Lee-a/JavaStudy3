@@ -4,24 +4,26 @@ import java.util.Scanner;
 
 public class StudentUtil {
 
-//	public Student search(Student[] students) {
-//		// 학생의 번호를 입력
-//		// 입력 받은 번호와 일치하는 학생을 찾아서
-//		// 리턴
-//		Scanner sc = new Scanner(System.in);
-//
-//		System.out.println("검색을 원하는 학생 번호를 입력하세요.");
-//		int searchNumber = sc.nextInt();
-//		Student stds = null;
-//		for (int i = 0; i < students.length; i++) {
-//			if (searchNumber == students[i].number) {
-//				stds = students[i];
-//	
-//				break;
-//			} 
-//		}
-//		return stds;
-//	}
+	public Student search(Student[] students) {
+		// 학생의 번호를 입력
+		// 입력 받은 번호와 일치하는 학생을 찾아서
+		// 리턴
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("검색을 원하는 학생 번호를 입력하세요.");
+		int searchNumber = sc.nextInt();
+		Student stds = null;
+
+		for (int i = 0; i < students.length; i++) {
+			if (searchNumber == students[i].number) {
+				stds = students[i];
+
+				break;
+			} 
+		}
+
+		return stds;
+	}
 
 	public Student[] makeStudents() {
 		// 학생 객체를 생성하고 정보를 입력 받는 곳

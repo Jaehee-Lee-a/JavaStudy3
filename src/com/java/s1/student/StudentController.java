@@ -7,6 +7,7 @@ public class StudentController {
 		Scanner sc = new Scanner(System.in);
 		boolean flag = true;
 		StudentUtil su = new StudentUtil(); // 정보 입력
+	    su.initUtil(); //스캐너 사용을 위한 메소드 호출
 		StudentView sv = new StudentView(); // 정보 출력
 		Student[] students = null; // 학생들의 정보를 담을 객체
 

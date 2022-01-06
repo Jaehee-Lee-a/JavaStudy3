@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class StudentUtil {
 	Scanner sc;
 	
-	public void initUtil() {
+	public StudentUtil() {
 		this.sc = new Scanner(System.in);
 	}
+//	public void initUtil() {
+//		this.sc = new Scanner(System.in);
+//	}
 
 	public Student search(Student[] students) {
 		// 학생의 번호를 입력

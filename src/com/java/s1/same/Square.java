@@ -9,9 +9,10 @@ public class Square {
 		//멤버변수 garo랑 매개변수로 받은 객체의 garo가 같고
 		//멤버변수 sero랑 매개변수로 받은 객체의 sero가 같으면 true reutrn
 		//하나라도 틀리면 false return
-		boolean result = false;
+		
 		if((this.garo == s.garo) && (this.sero == s.sero))
-			result = true;
-		return result;
+			return true;
+		else
+			return false;
 	}
 }
